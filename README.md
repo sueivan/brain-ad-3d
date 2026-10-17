@@ -1,12 +1,16 @@
-# 看见大脑的变化 V7.5 轻量修复版
+# 看见大脑的变化 V7.6 返回按钮版
 软件开发：苏裕盛 教授/医学博士
 
 ## GitHub 更新方法（本版与以前不同）
 解压后，把 index.html 与 assets 文件夹一起上传到 brain-ad-3d 仓库根目录，覆盖同名文件。保留 assets 文件夹内的文件名和目录结构。
 本版不能只上传 index.html；模型、程序、视频和GIF已拆成独立文件。
 MODEL_LICENSE.txt、THREE_LICENSE.txt 建议同时上传保留。
-地址仍为 https://sueivan.github.io/brain-ad-3d/ 。部署后顶部应显示“轻量修复版 V7.5”。
+地址仍为 https://sueivan.github.io/brain-ad-3d/ 。部署后顶部应显示“返回按钮版 V7.6”。
 如果本地直接双击HTML，浏览器可能限制模型读取；本版面向GitHub Pages使用。
+
+## 放大观看与返回
+“全屏观看”改为网页内放大，右上角始终显示“返回网页 ×”。点击后回到原滚动位置；桌面也可按Esc返回。放大时原按钮状态切换为“退出全屏”。
+本次必须同步更新 index.html、assets/media.js 和 assets/style.css；建议将index.html与整个assets文件夹一同上传覆盖。
 
 ## 改动
 1. index.html 从约23.9MB缩至约9.5KB；3D模型数据约3.8MB，异步加载。视频按点击加载，GIF使用懒加载。
