@@ -1,11 +1,11 @@
-# 看见大脑的变化 V8.0
+# 看见大脑的变化 V8.1
 软件开发：苏裕盛 教授/医学博士
 
 ## 上传
-将index.html与整个assets文件夹一起覆盖上传至仓库根目录。顶部显示GPU直绘版 V8.0。保留许可文件。
+将index.html与整个assets文件夹一起覆盖上传至仓库根目录。顶部显示GPU直绘版 V8.1。保留许可文件。
 
 ## 本次修改
-恢复第一版直接创建Three.js WebGLRenderer的GPU绘图路径，移除强制CPU及额外GPU探测。保留目前四阶段、脑区与移动端布局，模型仍使用约1MB的简化解剖网格；不代表整个项目回滚为第一版。
+恢复第一版直接创建Three.js WebGLRenderer的GPU绘图路径，移除强制CPU及额外GPU探测。保留目前四阶段、脑区与移动端布局，模型仍使用约41万面的精细解剖网格；不代表整个项目回滚为第一版。
 视频及GIF烧录明确的Aβ和Tau原文标注、引线与说明；两者分别标在细胞外斑块和细胞内缠结处。不使用“陶”。保留视频进度检测、返回网页按钮。
 
 ## 验证
@@ -25,3 +25,6 @@ NIA：https://www.nia.nih.gov/health/alzheimers-causes-and-risk-factors/what-hap
 几何筛选、平滑、减面、转码和AD形变属于派生修改，遵循 CC BY-SA 4.0：https://creativecommons.org/licenses/by-sa/4.0/
 详见 MODEL_LICENSE.txt。Three.js采用MIT许可，详见 THREE_LICENSE.txt。软件署名不替代模型原作者署名。
 
+
+## 精细脑图修改
+采用两轮Loop细分的皮质来源，再进行保留边界的减面；由5.3万面提高至41万面。调整材质，减轻小分区独立收缩引起的碎块感。正常脑和四阶段共用精细网格，仍为人工科普形变。压缩模型约4.7MB，支持解压的浏览器优先读取gzip文件。细节增加会增加首次下载量，未承诺手机速度与第一版相同。
