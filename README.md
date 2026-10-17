@@ -1,14 +1,21 @@
-# 看见大脑的变化 V7.0 多脑区版
+# 看见大脑的变化 V7.1 阶段形变版
 软件开发：苏裕盛 教授/医学博士
 
 ## 更新方法
 解压后，将 index.html 上传到原 brain-ad-3d 仓库根目录，覆盖旧文件。
 网页、模型及程序均包含在 index.html 内，不需要上传其他依赖。
 README.md、MODEL_LICENSE.txt、THREE_LICENSE.txt建议保留并同步更新。
-地址继续使用 https://sueivan.github.io/brain-ad-3d/ 。等待GitHub Pages部署完成后刷新，顶部应显示“多脑区版 V7.0”。
+地址继续使用 https://sueivan.github.io/brain-ad-3d/ 。等待GitHub Pages部署完成后刷新，顶部应显示“阶段形变版 V7.1”。
 本地也可直接双击index.html；浏览器需要支持WebGL和硬件加速。
 
-## 新增五组脑区与细胞示意
+## 修正四步形态差异
+- 增强脑回局部变瘦与整体皮质轮廓回缩，四步的几何形态均有递进差异。
+- 手动点击阶段立即切换；自动播放保留平滑过渡。
+- 补回原始BodyParts3D图谱左右大脑白质网格作为脑沟下方的连续组织。外观显示，内部结构模式隐藏；这些也是解剖图谱结构，非患者测量。
+- 正常参照与镜头尺度固定；随阶段更新右侧表面观察标签及说明。
+- 这套四步是视觉增强的科普叙事，不是四种标准临床脑图。初现与轻度可重叠，形变参数未按患者随访数据标定。
+
+## 保留五组脑区与细胞示意
 - 海马旁回：图谱实际网格，不作为内嗅皮质的精确分割。
 - 颞叶、顶叶、额叶：按图谱region分组高亮，单独放大对照。
 - 后扣带回与楔前叶：按Posterior dorsal / Posteroventral cingulate及Precuneus名称选择，排除middle posterior cingulate。
