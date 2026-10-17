@@ -1,15 +1,31 @@
-# 正常与AD脑结构交互对比
+# 正常与AD脑结构交互对比 V2.0
 
-仓库建议名：brain-ad-3d
+软件开发：苏裕盛 教授/医学博士
 
-上传本目录中的 index.html、app.js 和 README.md 至 GitHub 仓库根目录。
-进入 Settings → Pages → Deploy from a branch，选择 main 和 /(root)，保存。
-若账号为 sueivan，网址将为 https://sueivan.github.io/brain-ad-3d/ 。
-本地使用：将 index.html 与 app.js 放同一文件夹，双击 index.html。
-无外部脚本或模型依赖，支持离线使用。
+## GitHub Pages
+仓库名继续使用 brain-ad-3d，不需新建仓库。
+解压后上传全部文件与文件夹到仓库根目录，覆盖原来的同名文件，保留目录结构。
+进入 Settings → Pages，选择 Deploy from a branch → main → /(root)，保存。
+账号为 sueivan 时，网址为 https://sueivan.github.io/brain-ad-3d/ 。上传后按 Ctrl+F5 刷新。
 
-功能：双脑同步拖动旋转、滚轮及滑块缩放、固定视角、自动旋转、内部结构模式、中文结构说明。
+## 本地运行
+将所有文件保持在同一文件夹内，双击 index.html；无需安装软件或联网。
+使用支持WebGL的Chrome、Edge或Safari，并开启硬件加速。
 
-重要：模型是程序生成的简化教学几何体，不是真实解剖网格或MRI重建；不能用于精确定位、体积测量或临床诊断。AD变化方向有教学依据，具体几何尺寸不代表临床测量。尚未在真实浏览器中验证视觉布局和触屏操作。
+## 功能
+同步旋转、滚轮/滑块缩放、自动旋转、前/侧/上面观、内部观察海马与侧脑室、点击结构、中文解读。
 
-软件开发：苏裕盛
+## 模型来源与修改
+3D解剖网格取自 Brain Project：https://github.com/itayinbarr/brainproject
+原始几何来自 Z-Anatomy / BodyParts3D，© DBCLS；遵循 CC BY-SA 4.0。
+已筛选118个结构、转码、对皮质应用两次Loop细分以获得平滑外形、重新着色，并制作AD教学变形。
+本包 brain-data.js 及其几何派生修改（包括AD变形）依照 CC BY-SA 4.0 提供；保留署名并以相同许可共享。
+完整上游许可说明见 MODEL_LICENSE.txt。
+Three.js r170 使用MIT许可，见 THREE_LICENSE.txt。
+
+正常侧是解剖图谱参照，不是某位正常老年人的MRI。AD侧演示局部萎缩与侧脑室扩大方向，形变参数不代表临床测量、疾病分期或诊断依据。
+正常与AD使用同一显示尺度。内部模式隐藏皮质，不是MRI断面。
+
+## 验证范围
+已检查网格索引、顶点及法线有效性、双侧模型、海马缩小/脑室扩大、内外模式切换、重置逻辑及本地依赖完整性。
+已从同一网格制作独立几何预览以检查脑形；尚未在真实浏览器中实测WebGL画面、触屏操作及设备性能。
